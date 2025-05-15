@@ -48,8 +48,8 @@ services:
   vaapi-wsl: # use this for VAAPI if you're running Immich in WSL2
     devices:
       - /dev/dri:/dev/dri
+      - /dev/dxg:/dev/dxg
     volumes:
       - /usr/lib/wsl:/usr/lib/wsl
     environment:
-      - LD_LIBRARY_PATH=/usr/lib/wsl/lib
       - LIBVA_DRIVER_NAME=d3d12
