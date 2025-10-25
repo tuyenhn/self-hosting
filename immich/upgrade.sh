@@ -1,7 +1,7 @@
-(echo "Getting latest docker-compose.yml";cd ~/immich;git pull;)
-cp ~/immich/docker/docker-compose.yml .
+wget -O docker-compose.yml -nv https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
 git add -p docker-compose.yml
 git checkout -- docker-compose.yml
+
 
 echo "Updating Docker images"
 docker compose down -v
