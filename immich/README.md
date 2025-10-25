@@ -6,3 +6,4 @@ Backup scheme:
     - Only backing up the VM, i.e. the Postgres database
 - (2) The assets:
     - Backed up by `restic` to personal OneDrive through `rclone`
+    - Because of how Immich is set up, this backup will also include the daily database dumps by Immich
