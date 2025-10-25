@@ -2,7 +2,6 @@ wget -O docker-compose.yml -nv https://github.com/immich-app/immich/releases/lat
 git add -p docker-compose.yml
 git checkout -- docker-compose.yml
 
-
 echo "Updating Docker images"
 docker compose down -v
 docker compose pull             # Update to latest version of Immich
