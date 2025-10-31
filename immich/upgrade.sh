@@ -13,4 +13,4 @@ echo "Starting remainder Immich apps"
 docker compose up -d            # Start remainder of Immich apps
 
 echo "Pruning unused Docker images"
-docker image prune -f
+docker image prune -af
